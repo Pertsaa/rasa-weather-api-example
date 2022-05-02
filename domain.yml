@@ -1,0 +1,42 @@
+version: '3.1'
+
+intents:
+- goodbye
+- greet
+- ask_weather
+
+entities:
+- time
+
+slots:
+  time:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: time
+  weather:
+    type: text
+    mappings:
+    - type: custom
+  formatted_date:
+    type: text
+    mappings:
+    - type: custom
+
+responses:
+  utter_greet:
+  - text: Hey!
+  utter_goodbye:
+  - text: Bye
+  utter_weather:
+  - text: "The weather is {weather} on {formatted_date}!"
+
+actions:
+- utter_goodbye
+- utter_greet
+- utter_weather
+- action_fetch_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,12 @@
+version: "3.1"
+
+stories:
+  - story: ask weather
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_weather
+    - action: action_fetch_weather
+    - action: utter_weather
+    - intent: goodbye
+    - action: utter_goodbye

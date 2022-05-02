@@ -1,0 +1,50 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: request_review
+  examples: |
+    - I'd like to review a product
+    - can I review a product
+    - I'd wish to rate a product
+    - I'd like to give a review
+    - make review
+
+- intent: ask_weather
+  examples: |
+    - what is the weather like tomorrow?
+    - hows the weather
+    - what's the weather on monday?
+    - will it be sunny tomorrow
+    - will it rain on wednesday?
+    - is it going to be windy today
+    - will it rain on monday
+    - will it be sunny next week
