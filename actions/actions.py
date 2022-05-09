@@ -24,7 +24,7 @@ class ActionFetchWeather(Action):
 
       # Here we are returning mock weather data. In a real application this
       # would be an API call to a weather API using the time slot.
-      weather_list = ["sunny", "cloudy", "windy", "rainy"]
+      weather_list = ["+24 °C, clear", "+16 °C, mostly clear", "+10 °C, overcast", "+12 °C, moderate rain", "+20 °C, mostly cloudy"]
       result = random.choice(weather_list)
 
       # Set the weather slot to match the result of the fetched weather data.

@@ -29,7 +29,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_weather:
-  - text: "The weather is {weather} on {formatted_date}!"
+  - text: "The weather will be {weather} on {formatted_date}!"
 
 actions:
 - utter_goodbye
